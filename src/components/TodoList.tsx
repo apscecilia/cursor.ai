@@ -1,9 +1,11 @@
+"use client"
+
 import { useState, useEffect } from "react"
 import { PlusCircle, Trash2, Pencil, Check, X } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import Header from "./Header"
-import Footer from "./Footer"
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 import { Todo } from "@/types/todo"
 import { db } from "@/lib/firebase"
 import { collection, addDoc, deleteDoc, updateDoc, doc, onSnapshot, query, orderBy } from "firebase/firestore"
